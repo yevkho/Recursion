@@ -1,4 +1,5 @@
 //A) FIBONACCI
+
 //iteration
 function fibs(n) {
   let arr = [0, 1];
@@ -10,7 +11,7 @@ function fibs(n) {
   } else if (n == 1) {
     return (arr = [a]);
   } else if (n == 2) {
-    return (arr = [a, b]);
+    return arr;
   }
 
   for (let i = 2; i < n; i++) {
@@ -23,16 +24,6 @@ function fibs(n) {
 }
 
 //recursion
-function fibsRec2(n) {
-  let arr = [0, 1];
-
-  if (n == 0) return 0;
-  if (n == 1) return 1;
-
-  arr[n] = fibsRec(n - 1) + fibsRec(n - 2);
-  return arr;
-}
-
 function fibsRec(n) {
   // Base cases
   if (n === 0) return [0];
